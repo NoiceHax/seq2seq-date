@@ -76,21 +76,32 @@ YYYY-MM-DD
 ```
 
 ---
-
 ## Project Structure
 
 ```text
-project-root/
+seq2seq-date/
+│── checkpoints/
+│   ├── attn_seq2seq_model.pth
+│   └── seq2seq_model.pth
+│
 │── data/
 │   └── dataset.csv
 │
-│── models/
-│   ├── encoder.py
-│   ├── decoder.py
-│   ├── seq2seq.py
+│── heatmaps/
+│   ├── attention_heatmap_1.png
+│   ├── attention_heatmap_2.png
+│   ├── attention_heatmap_3.png
+│   ├── attention_heatmap_4.png
+│   └── attention_heatmap_5.png
+│
+│── model/
+│   ├── __init__.py
 │   ├── attention.py
 │   ├── attn_decoder.py
-│   └── attn_seq2seq.py
+│   ├── attn_seq2seq.py
+│   ├── decoder.py
+│   ├── encoder.py
+│   └── seq2seq.py
 │
 │── scripts/
 │   ├── evaluate.py
@@ -101,12 +112,13 @@ project-root/
 │   ├── test_loader.py
 │   └── test_model.py
 │
+│── venv/
+│
+│── .gitignore
+│── predict.py
+│── README.md
 │── train.py
 │── train_attention.py
-│── predict.py
-│── dataset.py
-│── dataloader.py
-│── README.md
 ```
 
 ---
