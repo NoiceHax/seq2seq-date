@@ -1,0 +1,49 @@
+# Python virtual environment
+venv/
+.venv/
+env/
+ENV/
+bin/
+lib/
+include/
+
+# Python caching & compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+doc/build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Large dataset files (CSV)
+data/dataset.csv
+
+# Saved PyTorch checkpoints (optional: comment out if you want to push model weights)
+checkpoints/
+*.pth
+
+# IDE settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
